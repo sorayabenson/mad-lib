@@ -10,7 +10,16 @@ const adjective3 = document.getElementById('adjective3');
 const verb1 = document.getElementById('verb1');
 const verb2 = document.getElementById('verb2');
 const verb3 = document.getElementById('verb3');
+const MadLipz = document.getElementById('MadLipz');
+
 
 // initialize state
 
 // set event listeners to update state and DOM
+
+//I know this isn't right, but this is where we got. 
+MadLipz.addEventListener('click') {
+    console.log('hello');
+}
+
+
