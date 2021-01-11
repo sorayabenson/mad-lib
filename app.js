@@ -28,9 +28,10 @@ const inputTen = document.getElementById('nounInputFive');
 const inputEleven = document.getElementById('verbInputThree');
 const poem = document.getElementById('poem');
 const inputWrapper = document.getElementById('inputWrapper');
-
-
-
+const poemLineTwo = document.getElementById('line2');
+const poemLineThree = document.getElementById('line3');
+const poemLineFour = document.getElementById('line4');
+const poemLineFive = document.getElementById('line5');
 
 
 // initialize state
@@ -38,13 +39,21 @@ const inputWrapper = document.getElementById('inputWrapper');
 // set event listeners to update state and DOM
 
 madLipz.addEventListener('click', () => {
-    const lineOne = 'Shall I compare thee ' + inputOne.value + ' to a ' + inputTwo.value + ' ? ';
-    const lineTwo = 'Thou art more ' + inputThree.value + ' and more ' + inputFour.value + '. ';
-    const lineThree = 'Rough winds do ' + inputFive.value + ' the ' + inputSix.value + ' ' + inputSeven.value + ' of May. ';
-    const lineFour = 'So long as ' + inputEight.value + ' can ' + inputNine.value + ', or eyes can see. ';
+
+    const lineOne = 'Shall I compare thee ' + inputOne.value + ' to a ' + inputTwo.value + ' ?';
+    const lineTwo = 'Thou art more ' + inputThree.value + ' and more ' + inputFour.value + '.';
+    const lineThree = 'Rough winds do ' + inputFive.value + ' the ' + inputSix.value + ' ' + inputSeven.value + ' of May.';
+    const lineFour = 'So long as ' + inputEight.value + ' can ' + inputNine.value + ', or eyes can see.';
     const lineFive = 'So long lives ' + inputTen.value + ', and this ' + inputEleven.value + ' life to thee.';
 
-    inputWrapper.textContent = lineOne + lineTwo + lineThree + lineFour + lineFive;
+    inputWrapper.textContent = lineOne;
+    poemLineTwo.textContent = lineTwo;
+    poemLineThree.textContent = lineThree;
+    poemLineFour.textContent = lineFour;
+    poemLineFive.textContent = lineFive;
+
+
+
 });
 
 //('Shall I compare thee ' + inputOne.value + ' to a ' + inputTwo.value + ' ? ' + ' Thou art more ' + inputThree.value + ' and more ' + inputFour.value + '. ' + 'Rough winds do ' + inputFive.value + ' the ' + inputSix.value + ' ' + inputSeven.value + ' of May. ' + 'So long as ' + inputEight.value + ' can ' + inputNine.value + ', or eyes can see. ' + 'So long lives ' + inputTen.value + ', and this ' + inputEleven.value + ' life to thee.');
